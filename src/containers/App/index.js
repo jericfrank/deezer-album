@@ -6,11 +6,18 @@ import AlbumList from '../AlbumList';
 
 export default class App extends Component {
   render() {
+    const { containerStyle } = styles;
     return (
-      <View>
-        <Header label="Albums" />
+      <View style={containerStyle}>
+        <Header label="Deezer" />
         <AlbumList />
       </View>
     );
   }
 }
+
+const styles = {
+  containerStyle: {
+    flex: 1
+  }
+};
